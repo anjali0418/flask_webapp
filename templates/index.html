@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!--information of the page--> 
+  <h1>Hello!</h1>
+  <p>This app allows you to be able to easily keep track of the number of days left to your examination!</p>
+
+<!--form to input subject to find the respective exam date -->
+  <form action="/required_subject">
+    <input autofocus autocomplete="off"name="subject" placeholder="Enter subject" type="text">
+    <input type="submit" placeholder="Submit">
+  </form>
+
+{% endblock %}
